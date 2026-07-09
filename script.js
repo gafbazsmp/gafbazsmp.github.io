@@ -1,5 +1,5 @@
 // НАСТРОЙКА: Напишите здесь точный IP-адрес вашего сервера (без портов типа :25565)
-const SERVER_IP = 'play.gafbazsmp.ru'; 
+const SERVER_IP = 'mc.hypixel.net'; 
 
 // 1. Логика копирования IP-адреса
 document.getElementById('ip-block').addEventListener('click', () => {
