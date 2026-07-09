@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gafbaz SMP — Приватный Майнкрафт Сервер</title>
+    <title>GafBazSMP — Приватный Майнкрафт Сервер</title>
     <!-- Подключение иконок -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <!-- Подключение стилей -->
@@ -13,13 +13,19 @@
 
     <div class="container">
         <header>
-            <h1>Gafbaz SMP</h1>
+            <h1>GafBazSMP</h1>
             <p>Ванильный выживательный сервер для друзей и адекватных игроков</p>
+            
+            <!-- Блок динамического онлайна -->
+            <div class="online-status" id="status-container">
+                <span class="status-dot pulse"></span>
+                <span id="online-text">Проверяем статус сервера...</span>
+            </div>
         </header>
 
         <!-- Блок копирования IP -->
         <div class="ip-box" id="ip-block">
-            <span class="ip-text" id="server-ip">gafbazsmp.ru</span>
+            <span class="ip-text" id="server-ip">play.gafbazsmp.ru</span>
             <button class="copy-btn" id="copy-button">
                 <i class="fa-regular fa-copy"></i> Копировать IP
             </button>
@@ -46,7 +52,7 @@
     </div>
 
     <footer>
-        &copy; 2026 Gafbaz SMP. Все права защищены. Работает на GitHub Pages.
+        &copy; 2026 GafBazSMP. Все права защищены. Работает на GitHub Pages.
     </footer>
 
     <!-- Подключение логики -->
