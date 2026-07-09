@@ -1,0 +1,129 @@
+:root {
+    --bg-color: #0f1115;
+    --card-color: #161920;
+    --accent-color: #4caf50;
+    --accent-hover: #43a047;
+    --text-main: #ffffff;
+    --text-muted: #9aa0a6;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+    text-shadow: 0 4px 10px rgba(76, 175, 80, 0.2);
+}
+
+header p {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.ip-box {
+    background: var(--card-color);
+    padding: 15px 25px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    border: 1px solid #232733;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.ip-box:hover {
+    transform: scale(1.02);
+    border-color: var(--accent-color);
+}
+
+.ip-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.copy-btn {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    background: var(--accent-hover);
+}
+
+.btn-link {
+    display: inline-block;
+    background: #5865F2; /* Discord color */
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 10px 0 30px 0;
+    transition: background 0.2s;
+}
+
+.btn-link:hover {
+    background: #4752C4;
+}
+
+.section {
+    background: var(--card-color);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 1px solid #1f232d;
+}
+
+.section h2 {
+    color: var(--accent-color);
+    margin-top: 0;
+    border-bottom: 2px solid #232733;
+    padding-bottom: 10px;
+}
+
+.rules-list {
+    padding-left: 20px;
+    line-height: 1.6;
+    color: #e2e8f0;
+}
+
+.rules-list li {
+    margin-bottom: 12px;
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
