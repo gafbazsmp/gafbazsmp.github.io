@@ -1,5 +1,5 @@
 // НАСТРОЙКА: Сюда пишем точный IP-адрес сервера
-const SERVER_IP = 'mc.hypixel.net'; 
+const SERVER_IP = 'reallyworld.ru'; 
 
 // 1. Логика копирования IP-адреса
 document.getElementById('ip-block').addEventListener('click', () => {
