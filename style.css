@@ -1,5 +1,5 @@
 :root {
-    --card-color: rgba(22, 25, 32, 0.85); /* Полупрозрачные карточки */
+    --card-color: rgba(22, 25, 32, 0.85);
     --accent-color: #4caf50;
     --accent-hover: #43a047;
     --text-main: #ffffff;
@@ -7,7 +7,6 @@
 }
 
 body {
-    /* Исправленный синтаксис градиента и картинки */
     background: linear-gradient(rgba(15, 17, 21, 0.8), rgba(15, 17, 21, 0.85)), 
                 url('./bg.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -42,7 +41,6 @@ header p {
     margin-top: 0;
 }
 
-/* Стили для онлайна сервера */
 .online-status {
     display: inline-flex;
     align-items: center;
@@ -58,7 +56,7 @@ header p {
 .status-dot {
     width: 10px;
     height: 10px;
-    background-color: #ff4d4d; /* Красный по дефолту, скрипт сменит на зеленый */
+    background-color: #ff4d4d;
     border-radius: 50%;
 }
 
@@ -67,7 +65,6 @@ header p {
     box-shadow: 0 0 8px #4caf50;
 }
 
-/* Анимация пульсации для зеленого индикатора */
 .pulse {
     animation: blink 2s infinite;
 }
