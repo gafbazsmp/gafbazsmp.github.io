@@ -20,7 +20,8 @@ function updateServerStatus() {
     const onlineText = document.getElementById('online-text');
     const statusDot = document.querySelector('.status-dot');
 
-    fetch(`https://mcsrvstat.us{SERVER_IP}`)
+    // Используем современный HTTPS API, который не блокируется браузерами
+    fetch(`https://mcstatus.io{SERVER_IP}`)
         .then(response => response.json())
         .then(data => {
             if (data.online) {
