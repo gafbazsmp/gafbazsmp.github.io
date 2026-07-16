@@ -1,6 +1,5 @@
 const SERVER_IP = 'mc.gafbazsmp.org'; 
 
-// 1. Копирование IP
 document.getElementById('ip-block').addEventListener('click', () => {
     const btn = document.getElementById('copy-button');
     navigator.clipboard.writeText(SERVER_IP).then(() => {
@@ -9,7 +8,6 @@ document.getElementById('ip-block').addEventListener('click', () => {
     });
 });
 
-// 2. Ультра-простой вывод онлайна без сложных проверок
 function updateServerStatus() {
     const onlineText = document.getElementById('online-text');
     const statusDot = document.querySelector('.status-dot');
@@ -26,9 +24,8 @@ function updateServerStatus() {
             }
         })
         .catch(() => {
-            // Если API упал или заблокирован, просто пишем понятный статус вместо системной ошибки
             statusDot.classList.remove('online');
-            onlineText.innerHTML = `<span style="color: #ff4d4d;">Сервер оффлайн</span>`;
+            onlineText.innerHTML = `<span style="color: #ff4d4d;">Сервер оффлайн или проблемы с сайтом</span>`;
         });
 }
 
