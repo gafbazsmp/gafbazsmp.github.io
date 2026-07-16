@@ -14,7 +14,7 @@ function updateServerStatus() {
     const onlineText = document.getElementById('online-text');
     const statusDot = document.querySelector('.status-dot');
 
-    fetch(`https://mcstatus.io{SERVER_IP}`)
+    fetch(`https://mcstatus.io/status/java/{SERVER_IP}`)
         .then(res => res.json())
         .then(data => {
             if (data && data.online && data.players) {
