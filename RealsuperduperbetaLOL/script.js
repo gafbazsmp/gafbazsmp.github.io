@@ -3,7 +3,7 @@ const SERVER_IP = 'reallyworld.ru';
 document.getElementById('ip-block').addEventListener('click', () => {
     const btn = document.getElementById('copy-button');
     navigator.clipboard.writeText(SERVER_IP).then(() => {
-        btn.innerHTML = '<i class="fa-solid fa-check"></i> Скопировано!';
+        btn.innerHTML = '<i class="fa-solid fa-check"></i> Скопировано! ';
         setTimeout(() => { btn.innerHTML = '<i class="fa-regular fa-copy"></i> Копировать IP'; }, 2000);
     });
 });
