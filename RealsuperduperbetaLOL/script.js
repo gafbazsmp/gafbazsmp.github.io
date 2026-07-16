@@ -1,4 +1,4 @@
-const SERVER_IP = 'mc.gafbazsmp.org'; 
+const SERVER_IP = 'reallyworld.ru'; 
 
 document.getElementById('ip-block').addEventListener('click', () => {
     const btn = document.getElementById('copy-button');
